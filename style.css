@@ -120,14 +120,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 800ms ease;
 }
 
 
 #menu.none, .home.none {
-
-    transition: all 800ms ease;
-    transition: all 800ms ease;
     display: none;
 }
 
@@ -628,12 +624,11 @@ body[data-theme=dark] .ThemeToggle_path__9hTG0 {
     opacity: 0;
 }
 
-section {
+.home {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 800ms ease;
 }
 
 h1 {
