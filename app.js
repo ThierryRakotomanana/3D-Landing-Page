@@ -1,3 +1,11 @@
+//BigBang prealoading
+
+const bigbang = document.querySelector("#bigbang");
+
+window.addEventListener("load", () => {
+    bigbang.classList.add("disapear");
+})
+
 const button = document.querySelector(".Button_button__L2wUb");
 
 button.addEventListener("click", () => {

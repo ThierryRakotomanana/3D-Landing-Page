@@ -24,7 +24,7 @@ drawType = 2;
  */
 function loadScene() {
   //    Get the canvas element
-  canvas = document.getElementById("c");
+  canvas = document.getElementById("bigbang");
   //    Get the WebGL context
   gl = canvas.getContext("experimental-webgl");
   //    Check whether the WebGL context is available or not

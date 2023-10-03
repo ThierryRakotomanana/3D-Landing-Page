@@ -119,7 +119,8 @@ canvas{
     height: 100%;
     transform: rotateX(180deg);
 }
-  
+
+/* This mediaquery is have to optimize for all devices*/
 @media (width < 600px) {
     canvas {
         width: 100%;
@@ -236,6 +237,16 @@ canvas{
 
 body:focus {
     outline: none
+}
+
+.disapear {
+    animation: vanish 2.5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        display: none;
+    }
 }
 
 @keyframes fadeIn {
