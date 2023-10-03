@@ -111,9 +111,21 @@ body {
     color: var(--colorTextBody);
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
+canvas{
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg);
+}
+  
+@media (width < 600px) {
+    canvas {
+        width: 100%;
+        height: 100vh;
+    }
+}
 
 #menu {
     height: 100vh;

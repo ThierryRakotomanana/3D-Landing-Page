@@ -6,9 +6,35 @@
     <meta name="theme-color" content="rgb(242 242 242)">
     <meta name="theme-color" content="rgb(17 17 17)">
     <link rel="stylesheet" href="style.css">
+    <script src="./preloader/bigBang.js"></script>
     <title>Document</title>
 </head>
 <body data-theme="light">
+    <!-- canva used for drawing the preloader -->
+    <canvas id="c"></canvas>
+    <!-- fragment shader for positionning all particle in bigbang preloader -->
+
+	<script id="shader-fs" type="x-shader/x-fragment">
+		#ifdef GL_ES
+		precision highp float;
+		#endif
+		void main(void) {
+			gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+		}
+	</script>
+    <!-- vertex shader for positionning all particle in bigbang preloader  -->
+
+	<script id="shader-vs" type="x-shader/x-vertex">
+		attribute vec3 vertexPosition;
+
+		uniform mat4 modelViewMatrix;
+		uniform mat4 perspectiveMatrix;
+
+		void main(void) {
+			gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+		}
+    </script>
+
     <nav id="menu" class="none">
         <ul id="menu-items">
             <a href="#" class="menu-item">Home</a>
