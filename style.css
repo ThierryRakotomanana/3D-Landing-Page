@@ -125,6 +125,8 @@ body {
 
 
 #menu.none, .home.none {
+
+    transition: all 800ms ease;
     transition: all 800ms ease;
     display: none;
 }
@@ -631,6 +633,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 800ms ease;
 }
 
 h1 {
@@ -638,16 +641,13 @@ h1 {
     position:  relative;
     font-size: 10rem;
     font-weight : 900;
-    color: var(--rgbWhite);
-    mix-blend-mode: difference;
-    z-index: 10;
 }
 
 .second-title {
     font-size: 10rem;
     font-weight : 900;
     position: relative;
-    color: var(--rgbWhite);
+    color: white;
     mix-blend-mode: difference;
 }
 
@@ -663,13 +663,13 @@ h1::before {
     content: "";
     width: 25px;
     height: 12rem;
-    background-color: white;
-    animation: 2s linear 5s infinite animeteTitle ;
+    background-color: rgb(var(--rgbText));
+    animation: 4s linear 0.5s infinite animeteTitle ;
     transition: all 800ms ease-in-out;
     z-index: -100;
     transform-origin: left;
 }
-
+/*
 .second-title::before {
     position: absolute;
     top: 20px;
@@ -683,19 +683,27 @@ h1::before {
     z-index: -100;
     transform-origin: left;
 }
+*/
 
 @keyframes animeteTitle {
     from {
         transform: scaleX(0.1);
     }
-    50% {
+    25% {
       transform: scaleX(17.5);
     }
-    to {
+    50% {
         transform: translateX(27rem) scaleX(0.10);
+    }
+    75% {
+        transform: translateX(27rem) scaleX(11);
+    }
+    to {
+        transform: translateX(44rem) scaleX(0.1);
     }
 }
 
+/*
 @keyframes animate-second-title {
     from {
         transform: scaleX(0.1);
@@ -707,7 +715,7 @@ h1::before {
         transform: translateX(17rem) scaleX(0.5);
     }
 }
-
+*/
 div > p > span {
     font-size: 2.5rem;
     font-weight : 500;
