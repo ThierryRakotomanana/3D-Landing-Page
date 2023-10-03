@@ -634,10 +634,21 @@ section {
 }
 
 h1 {
+    display: inline;
     position:  relative;
     font-size: 10rem;
     font-weight : 900;
+    color: var(--rgbWhite);
+    mix-blend-mode: difference;
     z-index: 10;
+}
+
+.second-title {
+    font-size: 10rem;
+    font-weight : 900;
+    position: relative;
+    color: var(--rgbWhite);
+    mix-blend-mode: difference;
 }
 
 div > p {
@@ -652,8 +663,22 @@ h1::before {
     content: "";
     width: 25px;
     height: 12rem;
-    background-color: black;
-    animation: animeteTitle 3s ease 0.5s infinite;
+    background-color: white;
+    animation: 2s linear 5s infinite animeteTitle ;
+    transition: all 800ms ease-in-out;
+    z-index: -100;
+    transform-origin: left;
+}
+
+.second-title::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    content: "";
+    width: 25px;
+    height: 12rem;
+    background-color: rgb(255, 255, 255);
+    animation: 2s linear 5s infinite animate-second-title ;
     transition: all 800ms ease-in-out;
     z-index: -100;
     transform-origin: left;
@@ -662,24 +687,24 @@ h1::before {
 @keyframes animeteTitle {
     from {
         transform: scaleX(0.1);
-        background-color: rgb(0, 174, 255);
-    }
-    25% {
-      transform: scaleX(17.5);
-      background-color: rgb(133, 21, 177);
     }
     50% {
-        transform: translateX(27rem) scaleX(0.10);
-        background-color: rgb(177, 21, 21);
-    }
-    75% {
-        transform: translateX(27rem) scaleX(11);
-        transform-origin: left;
-        background-color: rgb(155, 0, 0);
+      transform: scaleX(17.5);
     }
     to {
-        transform: translateX(44rem) scaleX(0.1);
-        background-color: rgb(21, 177, 169);
+        transform: translateX(27rem) scaleX(0.10);
+    }
+}
+
+@keyframes animate-second-title {
+    from {
+        transform: scaleX(0.1);
+    }
+    50% {
+        transform: scaleX(13);
+    }
+    to {
+        transform: translateX(17rem) scaleX(0.5);
     }
 }
 
