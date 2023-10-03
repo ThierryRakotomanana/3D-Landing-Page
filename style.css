@@ -658,9 +658,8 @@ h1::before {
     content: "";
     width: 25px;
     height: 12rem;
-    background-color: rgb(var(--rgbText));
-    animation: 4s linear 0.5s infinite animeteTitle ;
-    transition: all 800ms ease-in-out;
+    background-color: black;
+    animation: 3s linear 0s infinite animeteTitle ;
     z-index: -100;
     transform-origin: left;
 }
