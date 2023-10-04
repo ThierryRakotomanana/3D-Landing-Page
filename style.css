@@ -136,7 +136,7 @@ canvas{
 }
 
 
-#menu.none, .home.none {
+#menu.none{
     display: none;
 }
 
@@ -652,6 +652,7 @@ body[data-theme=dark] .ThemeToggle_path__9hTG0 {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: 3s linear 0s 1 fadeIn ;
 }
 
 h1 {
@@ -673,7 +674,7 @@ div > p {
     font-size: 5rem;
     font-weight : 600;
 }
-
+/*
 h1::before {
     position: absolute;
     top: 20px;
@@ -700,7 +701,6 @@ h1::before {
     z-index: -100;
     transform-origin: left;
 }
-*/
 
 @keyframes animeteTitle {
     from {
@@ -719,7 +719,7 @@ h1::before {
         transform: translateX(44rem) scaleX(0.1);
     }
 }
-
+*/
 /*
 @keyframes animate-second-title {
     from {
