@@ -7,11 +7,14 @@
     <meta name="theme-color" content="rgb(17 17 17)">
     <link rel="stylesheet" href="style.css">
     <script src="./preloader/bigBang.js"></script>
-    <title>Document</title>
+    <title>3D Landing Page</title>
 </head>
 <body data-theme="light">
+
     <!-- canva used for drawing the preloader -->
+
     <canvas id="bigbang"></canvas>
+
     <!-- fragment shader for positionning all particle in bigbang preloader -->
 
 	<script id="shader-fs" type="x-shader/x-fragment">
@@ -22,6 +25,7 @@
 			gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
 		}
 	</script>
+
     <!-- vertex shader for positionning all particle in bigbang preloader  -->
 
 	<script id="shader-vs" type="x-shader/x-vertex">
@@ -35,6 +39,8 @@
 		}
     </script>
 
+    <!-- Navbar  -->
+
     <nav id="menu" class="none">
         <ul id="menu-items">
             <a href="#" class="menu-item">Home</a>
@@ -45,7 +51,9 @@
         <div id="menu-background-pattern"></div>
         <div id="menu-background-image"></div>
     </nav>
-    <!--- sticky button for appearing menu --->
+
+    <!--- Button for appearing menu --->
+
     <button  class="Button_button__L2wUb ThemeToggle_toggle__w8LEU" data-icon-only="true" data-mobile="true" aria-label="Toggle theme">
         <span class="Button_text__t2U9w">
         <svg aria-hidden="true" width="38" height="38" viewBox="0 0 38 38">
@@ -63,8 +71,9 @@
             </circle>
         </svg>
         </span>
-        <!--- Toggle button for changing theme --->
     </button>
+        <!--- Toggle button for changing theme --->
+
     <button class="Button_button__L2wUb NavToggle_toggle__gmiZu" data-icon-only="true" aria-label="Menu" aria-expanded="false">
         <span class="Button_text__t2U9w">
             <div class="NavToggle_inner__0uerT">

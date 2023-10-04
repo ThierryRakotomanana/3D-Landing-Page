@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+section {
+    width: 50%;
+    height: 50%;
+    background: black;
+    animation: appear 2s;
+    animation-delay: 800ms;
+    opacity: 0;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: opacity;
+}
+
+@keyframes appear {
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -133,10 +133,11 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 800ms ease;
 }
 
 
-#menu.none, .home.none {
+#menu.none{
     display: none;
 }
 
@@ -262,22 +263,22 @@ body:focus {
 @keyframes reveal {
     0% {
         transform: scaleX(0);
-        transform-origin: left
+        transform-origin: left;
     }
 
     50% {
         transform: scaleX(1);
-        transform-origin: left
+        transform-origin: left;
     }
 
     51% {
         transform: scaleX(1);
-        transform-origin: right
+        transform-origin: right;
     }
 
     to {
         transform: scaleX(0);
-        transform-origin: right
+        transform-origin: right;
     }
 }
 
@@ -294,7 +295,7 @@ body:focus {
     position: absolute;
     top: 20px;
     right: 20px;
-    isolation: isolate
+    isolation: isolate;
 }
 
 
@@ -309,7 +310,8 @@ body:focus {
     align-items: center;
     color: var(--buttonTextColor);
     position: relative;
-    isolation: isolate
+    isolation: isolate;
+    animation : fadeIn 800ms ease;
 }
 
 .Button_button__L2wUb:active {
@@ -652,6 +654,8 @@ body[data-theme=dark] .ThemeToggle_path__9hTG0 {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 3s ease ;
+    animation-delay: 2.5s;
 }
 
 h1 {
@@ -665,15 +669,13 @@ h1 {
     font-size: 10rem;
     font-weight : 900;
     position: relative;
-    color: white;
-    mix-blend-mode: difference;
 }
 
 div > p {
     font-size: 5rem;
     font-weight : 600;
 }
-
+/*
 h1::before {
     position: absolute;
     top: 20px;
@@ -700,7 +702,6 @@ h1::before {
     z-index: -100;
     transform-origin: left;
 }
-*/
 
 @keyframes animeteTitle {
     from {
@@ -719,7 +720,7 @@ h1::before {
         transform: translateX(44rem) scaleX(0.1);
     }
 }
-
+*/
 /*
 @keyframes animate-second-title {
     from {
