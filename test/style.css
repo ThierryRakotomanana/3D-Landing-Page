@@ -2,14 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: white;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.137);
+    padding-block: 10px;
+    animation: navAppear 3s;
+}
+
+a {
+    margin-inline: 15px;
+    background-color: blueviolet;
+}
+
+@keyframes navAppear {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    20% {
+        transform : scaleY(1);
+    }
 }
 
 section {
@@ -33,4 +55,8 @@ section {
     to {
         opacity: 1;
     }
+}
+
+.logo {
+    width: 25px;
 }
