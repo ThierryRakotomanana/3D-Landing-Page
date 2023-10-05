@@ -17,16 +17,18 @@ section {
     height: 50%;
     background: black;
     animation: appear 2s;
-    animation-delay: 800ms;
-    opacity: 0;
     transition: 1s ease;
     transition-delay: 0.3s;
     transition-property: opacity;
 }
 
 @keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
     50% {
-        opacity: 0.5;
+        opacity : 0.5;
     }
     to {
         opacity: 1;
