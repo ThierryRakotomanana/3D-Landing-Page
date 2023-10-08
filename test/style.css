@@ -13,6 +13,7 @@ body {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.137);
     padding-block: 10px;
     height: 50px;
@@ -20,7 +21,7 @@ nav {
 }
 
 nav > * {
-    transition: flex-grow 2s, flex-basis 800ms, flex-shrink 800ms, width 1s;
+    transition: flex-grow 2s;
 }
 
 
@@ -50,6 +51,17 @@ body[data-theme="black"] > nav :last-child {
 
 .links {
     background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links > *{
+    flex-grow: 0;
+    transition: flex-grow 800ms;
+}
+
+body[data-theme="black"] .links > *{
+    flex-grow: 1;
 }
 
 a {
@@ -87,5 +99,59 @@ section {
     }
     to {
         opacity: 1;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+}
+
+.circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: rotateCircle 6s ease-in 0s infinite;
+}
+
+.circle::after {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 0;
+    width: 10%;
+    height: 10%;
+    content: "";
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.circle::before {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+    right: 0;
+    width: 10%;
+    height: 10%;
+    content: "";
+    background-color: blue;
+    border-radius: 50%;
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
