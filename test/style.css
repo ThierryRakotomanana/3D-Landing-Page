@@ -120,7 +120,7 @@ section {
     background-color: transparent;
     border-radius: 50%;
     border: 1px solid black;
-    animation: rotateCircle 6s ease-in 0s infinite;
+    animation: rotateCircle 3s linear 0s infinite;
 }
 
 .circle::after {
