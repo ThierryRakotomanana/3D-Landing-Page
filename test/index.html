@@ -6,17 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <nav>
-        <img class="logo" src="../assets/logo/noir.svg" alt="logo">
-        <div>
+        <div class="logo">LOGO</div>
+        <div class="links">
             <a href="#home">HOME</a>
             <a href="#home">ABOUT</a>
             <a href="#home">PROJECT</a>
             <a href="#home">CONTACT</a>
         </div>
-        <button>Theme</button>
+        <button class="button">Theme</button>
     </nav>
     <section class="home"></section>
+
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+
+    <script>
+        const body = document.querySelector(".body")
+        const button = document.querySelector(".button");
+        button.addEventListener("click", ()=> {
+            if(body.dataset.theme == "black") {
+                body.dataset.theme = ""
+            }else {
+                body.dataset.theme = "black"
+            }
+        })
+        const logo = document.querySelector(".logo")
+    </script>
 </body>
 </html>
