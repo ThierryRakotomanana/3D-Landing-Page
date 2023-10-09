@@ -52,27 +52,30 @@
         <div id="menu-background-image"></div>
     </nav>
 
-    <!--- Button for appearing menu --->
+    <!--- Toggle button for changing theme --->
 
     <button  class="Button_button__L2wUb ThemeToggle_toggle__w8LEU" data-icon-only="true" data-mobile="true" aria-label="Toggle theme">
         <span class="Button_text__t2U9w">
-        <svg aria-hidden="true" width="38" height="38" viewBox="0 0 38 38">
-            <defs>
-                <mask id=":rae:theme-toggle-mask">
-                    <circle class="ThemeToggle_circle__qVSRK" data-mask="true" cx="19" cy="19" r="13">
+            <div class="NavToggle_inner__0uerT ">
+                <svg aria-hidden="true" width="38" height="38" viewBox="0 0 38 38">
+                    <defs>
+                        <mask id=":rae:theme-toggle-mask">
+                            <circle class="ThemeToggle_circle__qVSRK" data-mask="true" cx="19" cy="19" r="13">
+                            </circle>
+                            <circle class="ThemeToggle_mask__Y09BP" cx="25" cy="14" r="9">
+                            </circle>
+                        </mask>
+                    </defs>
+                    <path class="ThemeToggle_path__9hTG0" d="M19 3v7M19 35v-7M32.856 11l-6.062 3.5M5.144 27l6.062-3.5M5.144 11l6.062 3.5M32.856 27l-6.062-3.5">
+                    </path>
+                    <circle class="ThemeToggle_circle__qVSRK" mask="url(#:rae:theme-toggle-mask)" cx="19" cy="19" r="12">
                     </circle>
-                    <circle class="ThemeToggle_mask__Y09BP" cx="25" cy="14" r="9">
-                    </circle>
-                </mask>
-            </defs>
-            <path class="ThemeToggle_path__9hTG0" d="M19 3v7M19 35v-7M32.856 11l-6.062 3.5M5.144 27l6.062-3.5M5.144 11l6.062 3.5M32.856 27l-6.062-3.5">
-            </path>
-            <circle class="ThemeToggle_circle__qVSRK" mask="url(#:rae:theme-toggle-mask)" cx="19" cy="19" r="12">
-            </circle>
-        </svg>
+                </svg>
+            </div>
         </span>
     </button>
-        <!--- Toggle button for changing theme --->
+        
+    <!--- Button for appearing menu --->
 
     <button class="Button_button__L2wUb NavToggle_toggle__gmiZu" data-icon-only="true" aria-label="Menu" aria-expanded="false">
         <span class="Button_text__t2U9w">
@@ -90,6 +93,8 @@
             </div>
         </span>
     </button>
+
+    
     <section class="home">
         <div>
             <h1></h1><span class="second-title">HandiCop</span>
