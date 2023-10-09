@@ -476,8 +476,8 @@ button.NavToggle_toggle__gmiZu {
     --offset: var(--spaceXS);
     --inset: calc(var(--spaceOuter) - var(--offset));
     position: fixed;
-    top: var(--inset);
-    right: var(--inset);
+    top: 28px;
+    right: 28px;
     z-index: var(--zIndex4);
     display: none;
 }
@@ -550,12 +550,12 @@ button.NavToggle_toggle__gmiZu {
 }
 
 .ThemeToggle_toggle__w8LEU {
-    --offset: 6px;
+    --offset: var(--spaceXS);
     --inset: calc(var(--spaceOuter) - var(--offset));
     position: fixed;
-    z-index: var(--zIndex4);
     top: var(--inset);
     right: var(--inset);
+    z-index: var(--zIndex4);
     transform: translateZ(0);
 }
 
