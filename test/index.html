@@ -13,7 +13,7 @@
             <a href="#home">HOME</a>
             <a href="#home">ABOUT</a>
             <a href="#home">PROJECT</a>
-            <a href="#home">CONTACT</a>
+            <a id="home" href="#home">CONTACT</a>
         </div>
         <button class="button">Theme</button>
     </nav>
@@ -39,6 +39,9 @@
             }
         })
         const logo = document.querySelector(".logo")
+
+        const home = document.querySelector("#home")
+        console.log(home.style.transform = `translate(-${home.offsetLeft}px,-${home.offsetTop}px)`)
     </script>
 </body>
 </html>

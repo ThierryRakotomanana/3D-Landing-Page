@@ -21,7 +21,7 @@ nav {
 }
 
 nav > * {
-    transition: flex-grow 2s;
+    transition: flex-grow 2s, translate 2s;
 }
 
 
