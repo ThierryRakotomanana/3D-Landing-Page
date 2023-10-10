@@ -119,8 +119,22 @@ section {
     height: 250px;
     background-color: transparent;
     border-radius: 50%;
-    border: 1px solid black;
-    animation: rotateCircle 3s linear 0s infinite;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: rotateCircle 5s linear 0s infinite;
+}
+
+.circle.two {
+    width: 175px;
+    height: 175px;
+}
+
+.circle.free {
+    width: 100px;
+    height: 100px;
 }
 
 .circle::after {
