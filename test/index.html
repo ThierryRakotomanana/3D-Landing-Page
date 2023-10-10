@@ -10,10 +10,10 @@
     <nav>
         <div class="logo">LOGO</div>
         <div class="links">
-            <a href="#home">HOME</a>
-            <a href="#home">ABOUT</a>
-            <a href="#home">PROJECT</a>
-            <a id="home" href="#home">CONTACT</a>
+            <a class="link" href="#home">HOME</a>
+            <a class="link" href="#home">ABOUT</a>
+            <a class="link" href="#home">PROJECT</a>
+            <a class="link" href="#home">CONTACT</a>
         </div>
         <button class="button">Theme</button>
     </nav>
@@ -31,17 +31,23 @@
     <script>
         const body = document.querySelector(".body")
         const button = document.querySelector(".button");
+        
+        const logo = document.querySelector(".logo")
+
+        const links = document.querySelectorAll(".link")
+        const screenSize = window.screen.availWidth
         button.addEventListener("click", ()=> {
             if(body.dataset.theme == "black") {
                 body.dataset.theme = ""
             }else {
                 body.dataset.theme = "black"
+                Array.from(links , (link) => {
+                    link.style.transition = `translate 2s, transform 2s`
+                    link.style.transform = `translate(${screenSize - link.getBoundingClientRect().left}px)`
+                })
             }
         })
-        const logo = document.querySelector(".logo")
-
-        const home = document.querySelector("#home")
-        console.log(home.style.transform = `translate(-${home.offsetLeft}px,-${home.offsetTop}px)`)
+        
     </script>
 </body>
 </html>
