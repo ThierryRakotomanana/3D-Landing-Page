@@ -35,16 +35,17 @@
         const logo = document.querySelector(".logo")
 
         const links = document.querySelectorAll(".link")
-        const screenSize = window.screen.availWidth
+        const screenSize = window.innerWidth
         button.addEventListener("click", ()=> {
             if(body.dataset.theme == "black") {
+                Array.from(links , (link) => {
+                    link.style.display = `inline-block`
+                    link.style.transition = `translate 2s, transform 2s`
+                    link.style.transform = `translate(${screenSize - link.getBoundingClientRect().x}px)`
+                })
                 body.dataset.theme = ""
             }else {
                 body.dataset.theme = "black"
-                Array.from(links , (link) => {
-                    link.style.transition = `translate 2s, transform 2s`
-                    link.style.transform = `translate(${screenSize - link.getBoundingClientRect().left}px)`
-                })
             }
         })
         
