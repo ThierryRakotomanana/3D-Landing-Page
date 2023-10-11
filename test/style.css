@@ -16,6 +16,7 @@ nav {
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.137);
     padding-block: 10px;
+    width: 90%;
     height: 50px;
     animation: navAppear 0.5s;
 }
@@ -48,7 +49,7 @@ body[data-theme="black"] > nav :nth-child(2){
 body[data-theme="black"] > nav :last-child {
     flex-grow: 1;
 }
-
+/*
 .links {
     background-color: brown;
     display: flex;
@@ -63,7 +64,7 @@ body[data-theme="black"] > nav :last-child {
 body[data-theme="black"] .links > *{
     flex-grow: 1;
 }
-
+*/
 a {
     margin-inline: 15px;
     background-color: blueviolet;
