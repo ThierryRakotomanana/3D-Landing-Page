@@ -675,7 +675,7 @@ div > p {
     font-size: 5rem;
     font-weight : 600;
 }
-/*
+
 h1::before {
     position: absolute;
     top: 20px;
@@ -688,7 +688,7 @@ h1::before {
     z-index: -100;
     transform-origin: left;
 }
-/*
+
 .second-title::before {
     position: absolute;
     top: 20px;
@@ -720,8 +720,7 @@ h1::before {
         transform: translateX(44rem) scaleX(0.1);
     }
 }
-*/
-/*
+
 @keyframes animate-second-title {
     from {
         transform: scaleX(0.1);
@@ -733,7 +732,7 @@ h1::before {
         transform: translateX(17rem) scaleX(0.5);
     }
 }
-*/
+
 div > p > span {
     font-size: 2.5rem;
     font-weight : 500;
