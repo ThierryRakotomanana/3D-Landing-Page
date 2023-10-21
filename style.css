@@ -676,64 +676,6 @@ div > p {
     font-weight : 600;
 }
 
-/*
-h1::before {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    content: "";
-    width: 25px;
-    height: 12rem;
-    background-color: rgb(var(--rgbText));
-    animation: 3s linear 0s infinite animeteTitle ;
-    z-index: -100;
-    transform-origin: left;
-}
-
-.second-title::before {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    content: "";
-    width: 25px;
-    height: 12rem;
-    background-color: rgb(255, 255, 255);
-    animation: 2s linear 5s infinite animate-second-title ;
-    transition: all 800ms ease-in-out;
-    z-index: -100;
-    transform-origin: left;
-}
-
-@keyframes animeteTitle {
-    from {
-        transform: scaleX(0.1);
-    }
-    25% {
-      transform: scaleX(17.5);
-    }
-    50% {
-        transform: translateX(27rem) scaleX(0.10);
-    }
-    75% {
-        transform: translateX(27rem) scaleX(11);
-    }
-    to {
-        transform: translateX(44rem) scaleX(0.1);
-    }
-}
-
-@keyframes animate-second-title {
-    from {
-        transform: scaleX(0.1);
-    }
-    50% {
-        transform: scaleX(13);
-    }
-    to {
-        transform: translateX(17rem) scaleX(0.5);
-    }
-}
-*/
 div > p > span {
     font-size: 2.5rem;
     font-weight : 500;
